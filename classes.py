@@ -13,7 +13,7 @@ r1.introduce_self()
 
 class Parent:
     def __init__(self):
-        self.__my_var = 1
+        self.my_var = 1
 
 
 class Child(Parent):
@@ -22,5 +22,15 @@ class Child(Parent):
 
 
 child = Child()
-print(child._my_var)
+print(child.my_var)
 
+
+class Polynomial:
+    def __init__(self, *coeffs):
+        self.coeffs = coeffs
+
+    def __repr__(self):
+        return 'Polynomial(*{!r})'.format(self.coeffs)
+
+p1 = Polynomial(1, 2, 3)
+print(p1)
