@@ -45,3 +45,13 @@ print(sample_string.strip())
 
 split = sample_string.split(" ")
 print(split)
+
+gbl_name = "Beethoven"
+
+
+def change_name():
+    global gbl_name
+    gbl_name = "Mozart"
+
+
+print(gbl_name)
