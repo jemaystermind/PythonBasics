@@ -1,3 +1,3 @@
-import sum
+from sum import get_sum
 
-print("Sum:", sum.get_sum(1, 2, 3, 4, 1))
+print("Sum:", get_sum(1, 2, 3, 4, 1))
