@@ -5,6 +5,8 @@ while True:
         break
     except ValueError:
         print("Please enter a valid number.")
+    except(ValueError, NameError):
+        print("Handling multiple errors")
     except:
         print("Unknown error occurred.")
 
