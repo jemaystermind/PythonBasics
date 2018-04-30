@@ -33,3 +33,11 @@ def do_math(func, num):
     return func(num)
 
 print("Higher order function: 8 * 2 =", do_math(multiply_by_2, 8))
+
+
+# Functions stored in a list
+
+list_of_funcs = [times_2, add]
+
+print("Functions inside a list: 5 * 2 =", list_of_funcs[0](5))
+print("Functions inside a list: 5 + 10 =", list_of_funcs[1](5))
