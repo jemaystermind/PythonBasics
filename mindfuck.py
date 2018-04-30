@@ -15,3 +15,12 @@ print("var names: ", add.__code__.co_varnames)
 print("")
 
 print(getsource(add))
+
+
+# Assigning a function
+def multiply_by_2(num):
+    return num * 2
+
+times_2 = multiply_by_2
+
+print("2 * 2", times_2(2))
