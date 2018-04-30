@@ -24,3 +24,12 @@ def multiply_by_2(num):
 times_2 = multiply_by_2
 
 print("2 * 2", times_2(2))
+
+
+# Passing a function to a function
+# Higher-order function in Kotlin
+
+def do_math(func, num):
+    return func(num)
+
+print("Higher order function: 8 * 2 =", do_math(multiply_by_2, 8))
